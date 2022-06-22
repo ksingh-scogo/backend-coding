@@ -13,7 +13,7 @@
 
 You have to build 5 APIs for this challenge. 
 
-Schema Definations is as Follow
+Schema Definations are as Follow
 * User
 ```json
 {
