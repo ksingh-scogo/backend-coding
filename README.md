@@ -37,6 +37,18 @@ Schema Definations are as Follow
 }
 ```
 
+* **Order**
+```json
+{
+    "user": ObjectId,
+    "pizza": ObjectId,
+    "orderDate": Date,
+    "isFulfilled": Boolean
+}
+```
+
+-------------
+
 Description of each API is given below.
 
 1. **SignUp User (POST `/api/signup`) (`PUBLIC`)**
@@ -136,6 +148,32 @@ Description of each API is given below.
 ```
 
 -------------
+
+6. **Place Order (POST `/api/pizzas/placeOrder`) (`SECURED`)**
+> Request Body for this API  is as follow:
+```json
+{
+    "pizzaId": String
+}
+```
+> For this API you have to mandatorily use **`MongoDB Transaction`**. Retrieve the user Id from the authorization token. It should return object in Response Body as follow:
+```json
+{
+    "user": {
+        "firstName": String,
+        "lastName": String,
+        "email": String,
+        "mobile": Number
+    },
+    "pizza": {
+        "name": String,
+        "price": Number,
+        "ingredients": [String]
+    },
+    "orderDate": Date,
+    "isFulfilled": Boolean
+}
+```
 
 
 ## Note
