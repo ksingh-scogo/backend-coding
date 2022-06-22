@@ -1,9 +1,6 @@
-Backend Coding Challenge
-=======
+# Backend Coding Challenge
 
-Prerequisites
-
--------------
+## Prerequisites
 
 * [Node.js](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com/)
@@ -12,25 +9,24 @@ Prerequisites
 * You can use any additional libraries you want.
 * Unless explicily specified in API description use the Standard `HTTP Status Code` should be followed as per the `HTTP Method` you are using and what type of response you are returning
 
-Project Description
-
--------------------
+## Project Description
 
 You have to build 5 APIs for this challenge. 
 
-Schema Definations
-1. User
+Schema Definations is as Follow
+* User
 ```json
 {
     "firstName": String,
     "lastName": String,
     "email": String,
     "mobile": Number,
-    "password": String
+    "password": String,
+    "salt": String
 }
 ```
 
-2. Pizza
+* Pizza
 ```json
 {
     "name": String,
@@ -39,10 +35,9 @@ Schema Definations
 }
 ```
 
-
 Description of each API is given below.
 
-1. SignUp User (POST `/api/signup`) (`PUBLIC`)
+1. **SignUp User (POST `/api/signup`) (`PUBLIC`)**
 > Request Body for this API  is as follow:
 ```json
 {
@@ -54,7 +49,7 @@ Description of each API is given below.
     "confirmPassword": String
 }
 ```
-> All the fields in **User** Schema are required. It should return the **User** object without password field in response.
+> All the fields in **User** Schema are required. Use Hash & Salt to store `password`. It should return the **User** object without password field in response.
 > Response Body is as follow:
 ```json
 {
@@ -67,7 +62,7 @@ Description of each API is given below.
 
 -------------
 
-2. User Login (POST `/api/login`) (`PUBLIC`)
+2. **User Login (POST `/api/login`) (`PUBLIC`)**
 > Request Body for this API  is as follow:
 ```json
 {
@@ -85,7 +80,7 @@ Description of each API is given below.
 
 -------------
 
-3. Insert Pizza Details (POST `/api/pizzas`) (`SECURED`)
+3. **Insert Pizza Details (POST `/api/pizzas`) (`SECURED`)**
 > Request Body for this API  is as follow:
 ```json
 {
@@ -106,7 +101,7 @@ Description of each API is given below.
 
 -------------
 
-4. List of Pizzas (GET `/api/pizzas`) (`SECURED`)
+4. **List of Pizzas (GET `/api/pizzas`) (`SECURED`)**
 > It should return the list of **Pizzas**. Response should be an Array of Object
 > Response Body is as follow:
 ```json
@@ -121,7 +116,7 @@ Description of each API is given below.
 
 -------------
 
-5. Update Pizza Ingredients (PATCH `/api/pizzas/:id`) (`SECURED`)
+5. **Update Pizza Ingredients (PATCH `/api/pizzas/:id`) (`SECURED`)**
 > Request Body for this API  is as follow:
 ```json
 {
