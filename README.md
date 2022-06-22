@@ -5,8 +5,8 @@
 * [Node.js](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com/)
 
-* You can use any Framework(expressjs, Fastify, Koa, nestjs, etc.) you want.
-* You can use any additional libraries you want.
+* You can use any Framework(expressjs, Fastify, Koa, nestjs, etc.).
+* You can use any libraries you want.
 * Unless explicily specified in API description use the Standard `HTTP Status Code` should be followed as per the `HTTP Method` you are using and what type of response you are returning
 
 ## Project Description
