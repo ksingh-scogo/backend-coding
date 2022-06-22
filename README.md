@@ -70,7 +70,7 @@ Description of each API is given below.
     "password": String
 }
 ```
-> email & password should be used to login. It should return an object with `accessToken` in it. Response HTTP Status Code should be `200`
+> email & password should be used to login. It should return an object with `accessToken` in it. Response HTTP Status Code should be `200`.
 > Response Body is as follow:
 ```json
 {
@@ -102,7 +102,7 @@ Description of each API is given below.
 -------------
 
 4. **List of Pizzas (GET `/api/pizzas`) (`SECURED`)**
-> It should return the list of **Pizzas**. Response should be an Array of Object
+> It should return the list of **Pizzas**. Response should be an Array of Object.
 > Response Body is as follow:
 ```json
 [
@@ -123,7 +123,7 @@ Description of each API is given below.
     "ingredients": [String]
 }
 ```
-> Each item from the request must be inserted in `ingredients` Array. `ingredients` Array should have unique items. It should return the updated object of **Pizza**
+> Each item from the request must be inserted in `ingredients` Array. `ingredients` Array should have unique items. It should return the updated object of **Pizza**.
 > Response Body is as follow:
 ```json
 {
