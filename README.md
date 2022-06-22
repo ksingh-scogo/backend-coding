@@ -14,7 +14,7 @@
 You have to build 5 APIs for this challenge. 
 
 Schema Definations are as Follow
-* User
+* **User**
 ```json
 {
     "firstName": String,
@@ -26,7 +26,7 @@ Schema Definations are as Follow
 }
 ```
 
-* Pizza
+* **Pizza**
 ```json
 {
     "name": String,
