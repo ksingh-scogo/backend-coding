@@ -7,7 +7,7 @@
 
 * You can use any Framework(expressjs, Fastify, Koa, nestjs, etc.).
 * You can use any libraries you want.
-* Unless explicily specified in API description use the Standard `HTTP Status Code` should be followed as per the `HTTP Method` you are using and what type of response you are returning
+* Unless explicily specified in API description use the Standard `HTTP Status Code` as per the `HTTP Method` you are using and what type of response you are returning
 
 ## Project Description
 
