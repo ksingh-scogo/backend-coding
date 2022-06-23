@@ -13,7 +13,7 @@ We are looking for **`production`** Quality Code.
 
 ## Project Description
 
-You have to build 5 APIs for this challenge. 
+You have to build 6 APIs for this challenge. 
 
 Schema Definations are as Follow
 * **User**
